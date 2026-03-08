@@ -12,3 +12,7 @@ ML-KEM (格子暗号ベース):
   B: dk + ct でデカプセル化 → 共有秘密
   → 量子コンピュータでも格子問題は解けない
 
+presharedKeyでPQC対応はしている。[5.2](https://www.wireguard.com/papers/wireguard.pdf)
+
+- crypto/mlkem	Go 1.24+	ML-KEM-768 カプセル化/デカプセル化
+- crypto/mldsa	Go 1.27 (proposal golang/go#77626)	CSAC Phase 2 でのハイブリッド署名（future?）
